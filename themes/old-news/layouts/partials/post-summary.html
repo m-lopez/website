@@ -1,0 +1,12 @@
+<article>
+  <hr>
+  <p>post: <a href="{{.Permalink}}">{{ .Title }}</a></p>
+  <p>on: <time>{{ .Date.Format "2006-01-02" }}</time></p>
+  {{ range .Params.tags}}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+  <p>
+    Summary: <span class="reading-text">{{ .Summary | safeHTML }}</span>
+  </p>
+</article>
+

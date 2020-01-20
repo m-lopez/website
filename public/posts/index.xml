@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Love, chocolate, maths; in that order.</title>
+    <link>https://www.givemeavir.us/public/posts/</link>
+    <description>Recent content in Posts on Love, chocolate, maths; in that order.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Jan 2020 09:36:35 -0500</lastBuildDate>
+    
+	<atom:link href="https://www.givemeavir.us/public/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Probability Notation Cheatsheet</title>
+      <link>https://www.givemeavir.us/public/posts/probability-notation/</link>
+      <pubDate>Mon, 20 Jan 2020 09:36:35 -0500</pubDate>
+      
+      <guid>https://www.givemeavir.us/public/posts/probability-notation/</guid>
+      <description>Many presentations of probability theory rely on shorthand and intuitive, yet informal, definitions. This can be confusing for those of use just learning the subject or returning to it after years.  Here is a cheat sheet to help you along!</description>
+    </item>
+    
+  </channel>
+</rss>

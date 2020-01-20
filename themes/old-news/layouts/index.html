@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main>
+  {{ partial "post-listing.html" . }}
+  {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+  {{ range $paginator.Pages }}
+    {{ partial "post-summary.html" . }}
+  {{ end }}
+</main>
+{{end}}

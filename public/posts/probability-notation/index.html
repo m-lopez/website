@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us"><meta charset="UTF-8">
+<title>Probability Notation Cheatsheet</title>
+<link rel="stylesheet" href="/public/css/style.css">
+<script
+  type="text/javascript"
+  async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+<body><header>
+  <p><a href="https://www.givemeavir.us/public">Love, chocolate, maths; in that order.</a></p>
+  <p>a public record of notes on math, code, and other stuff</p>
+  <p>
+    the author:
+    <a href="https://www.linkedin.com/in/michael-lopez-669b0588/">linkedin</a>,
+    <a href="https://github.com/m-lopez">github</a>
+  </p>
+</header>
+<div id="content">
+  <main>
+    <hr>
+    <article>
+      <h1>Probability Notation Cheatsheet</h1>
+      <time>2020-01-20</time>
+      <div>
+
+<p>I recently found myself using Bayesian inference techniques to solve a
+problem. Wanting to know more, I turned to the literature. But the notation
+looked foreign to me. The symbols were recognizable, but I couldn&rsquo;t draw
+meaning from their arrangements on the screen.</p>
+
+<p>Familiarize yourself with the definitions of
+<a href="https://en.wikipedia.org/wiki/%CE%A3-algebra#Definition">σ-algebras</a> and
+<a href="https://en.wikipedia.org/wiki/Probability_space#Definition">probability
+spaces</a>. For the
+rest of the article, assume that $(\Omega,\mathcal{F},\mathbb{P})$ is a
+discrete probability space.</p>
+
+<p>The first object on which I stubbed my math toes was the random variable and
+its use to construct events. A discrete random variable is a function $X:
+\Omega \rightarrow \mathbb{R}$. That&rsquo;s it.</p>
+
+<p>Often, random variables are used to construct events that are passed to
+$\mathbb{P}$. For example, $\mathbb{P}(X \leq 100)$. The notation $X \leq
+100$ describes an event; an element in $\mathcal{F}$; a subset of $\Omega$.
+The means the following.</p>
+
+<blockquote>
+<p>$X \leq 100 \triangleq \{ \omega \in \Omega ~|~ X(\omega)  \leq 100 \}$</p>
+</blockquote>
+
+<p>More generally, if we have a constraint $C$ (like only evens or between 1 and
+10), then the notation $C(X)$ is interpreted as the event $\{ \omega \in
+\Omega ~|~ C(X(\omega)) \}$.</p>
+
+<p>Similarly, use of natural languge connectives like &ldquo;and&rdquo; and &ldquo;or&rdquo; translate
+to set operations. Consider $\mathbb{P}(H \leq 160 ~\mathrm{and}~ W \geq
+60)$. The use of &ldquo;and&rdquo; refers to set intersection.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Here is a list of common notational conventions for constructing events.</p>
+
+<ul>
+<li>For some $A \subseteq \mathbb{R}$,
+$X \in A \triangleq \{ \omega \in \Omega ~|~ X(\omega) \in A \}$.</li>
+<li>For some relation $R \subseteq \mathbb{R} \times \mathbb{R}$ and $t \in \mathbb{R}$,
+$X ~R~ t \triangleq \{ \omega \in \Omega ~|~ (X(\omega), t) \in R \}$. Common relations include $\leq$, $&lt;$, $=$, etc.</li>
+<li>For events $A,B \in \mathcal{F}$, $\mathbb{P}(A ~\mathrm{and}~ B)$ is equivalent to $\mathbb{P}(A \cap B)$.</li>
+</ul>
+</div>
+    </article>
+  </main>
+
+        </div>
+        <br /><footer>
+  &copy; Copyright 2020, Michael Lopez
+</footer>
+</body>
+</html>

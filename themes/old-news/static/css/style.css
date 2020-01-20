@@ -1,0 +1,22 @@
+body {
+  font-family: "Courier New";
+  max-width: 70ch;
+  margin: auto;
+}
+
+a {
+  color: #BA4900;
+}
+
+footer {
+  font-size: 60%;
+}
+
+#post-listing {
+  text-align: right;
+}
+
+.reading-text {
+  /*font-family: Arial;*/
+  font-style: italic;
+}
